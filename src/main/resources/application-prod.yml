@@ -1,10 +1,5 @@
 server:
-  port: 443
-  ssl:
-    key-store: classpath:luischen.cn.pfx
-    key-store-password: l29df164yf5d4z
-    key-store-type: PKCS12
-
+  port: 8443
 
 spring:
     datasource:
@@ -36,7 +31,6 @@ spring:
         # 打开PSCache，并指定每个连接上PSCache的大小。oracle设为true，mysql设为false。分库分表较多推荐设置为false
         pool-prepared-statements: false
         max-pool-prepared-statement-per-connection-size: 20
-      schema: classpath:lu_tale.sql
     thymeleaf:
             prefix: classpath:/templates/
             check-template-location: true
@@ -67,7 +61,11 @@ pagehelper:
     returnPageInfo: check
 
 swagger:
-  enable: false
+  show: false
 
-
-
+qiniu:
+  accesskey: "DrvjR5bfhiTLQKMQ3NHGzUK7A-02ZwOsvEJXLXY9"
+  serectkey: "EYj5O9FcMRHHFDl0u6nNe-cdJ904I9H0NNhUf9yk"
+  bucket: "my--site"
+  cdn:
+    url: "qtzagji5e.hd-bkt.clouddn.com"
