@@ -63,4 +63,4 @@ qiniu:
   serectkey: "EYj5O9FcMRHHFDl0u6nNe-cdJ904I9H0NNhUf9yk"
   bucket: "my--site"
   cdn:
-    url: "qtzagji5e.hd-bkt.clouddn.com"
+    url: "http://qtzagji5e.hd-bkt.clouddn.com"
