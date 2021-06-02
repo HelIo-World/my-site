@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org"
-      th:fragment="header">
+<html lang="en" th:fragment="header"
+      xmlns:th="http://www.thymeleaf.org">
 <header role="header">
     <div class="container">
 
         <!-- logo -->
 
-        <h1> <a th:href="@{/}" title="HelloWorld"><img th:src="@{http://qtzagji5e.hd-bkt.clouddn.com/upload/2021/06/7nn7gdvta2gj6oh3bor3dgvj15.png}" style="width: 66px;" title="HelloWorld" alt="HelloWorld"/></a> </h1>
+        <h1><a th:href="@{/}" title="HelloWorld"><img
+                alt="HelloWorld"
+                style="width: 66px;" th:src="@{http://qtzagji5e.hd-bkt.clouddn.com/upload/2021/06/7nn7gdvta2gj6oh3bor3dgvj15.png}" title="HelloWorld"/></a></h1>
 
         <!-- logo -->
 
         <!-- nav -->
 
-        <nav role="header-nav" class="navy">
+        <nav class="navy" role="header-nav">
             <ul>
                 <li th:class="${active == 'work' ? 'nav-active':''}"><a th:href="@{/}" title="Work">Work</a></li>
-                <li th:class="${active == 'about' ? 'nav-active':''}"><a  th:href="@{/about}" title="About">About</a></li>
-                <li th:class="${active == 'blog' ? 'nav-active':''}"><a th:href="@{/blog/index}" title="Blog">Blog</a></li>
+                <li th:class="${active == 'about' ? 'nav-active':''}"><a th:href="@{/about}" title="About">About</a>
+                </li>
+                <li th:class="${active == 'blog' ? 'nav-active':''}"><a th:href="@{/blog/index}" title="Blog">Blog</a>
+                </li>
             </ul>
         </nav>
 

@@ -19,6 +19,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 
 /**
  * 自定义拦截器
@@ -50,6 +51,7 @@ public class BaseInterceptor implements HandlerInterceptor {
 
         LOGGE.info("UserAgent: {}", request.getHeader(USER_AGENT));
         LOGGE.info("用户访问地址: {}, 来路地址: {}", uri, IPKit.getIpAddrByRequest(request));
+
 
 
         //请求拦截处理
